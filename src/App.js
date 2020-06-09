@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import CoinToss from './CoinToss';
+
 
 function App() {
   return (
     <div className="App">
+      <CoinToss/>
     </div>
   );
 }
