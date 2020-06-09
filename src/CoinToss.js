@@ -12,10 +12,13 @@ class CoinToss extends React.Component{
     tailsDrawn: 0,
     currentDraw: 'heads',
   }
+
   render(){
+    const {currentDraw} = this.state;
     return (
       <div>
         <h1>Coin Tossing action here!</h1>
+        <img alt={currentDraw} src={this.props[currentDraw]}/>
       </div>
     )
   }
