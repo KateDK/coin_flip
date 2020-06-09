@@ -13,12 +13,17 @@ class CoinToss extends React.Component{
     currentDraw: 'tails',
   }
 
+  flip = () =>{
+    const random = Math.ceil(Math.random()*2);
+    random > 1 ? this.setState(prevState => ({tailsDrawn: prevState.tailsDrawn+1, currentDraw: 'tails'})) : this.setState(prevState => ({headsDrawn: prevState.headsDrawn+1, currentDraw:'heads'}));
+  }
   render(){
     const {currentDraw} = this.state;
     return (
       <div>
         <h1>Coin Tossing action here!</h1>
         <Coin currentDraw={currentDraw} src={this.props[currentDraw]}/>
+        <button onClick={this.flip}>Flip</button>
       </div>
     )
   }
