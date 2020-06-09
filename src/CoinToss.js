@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Coin from './Coin';
 
 class CoinToss extends React.Component{
   static defaultProps = {
@@ -10,7 +10,7 @@ class CoinToss extends React.Component{
   state ={
     headsDrawn: 0,
     tailsDrawn: 0,
-    currentDraw: 'heads',
+    currentDraw: 'tails',
   }
 
   render(){
@@ -18,7 +18,7 @@ class CoinToss extends React.Component{
     return (
       <div>
         <h1>Coin Tossing action here!</h1>
-        <img alt={currentDraw} src={this.props[currentDraw]}/>
+        <Coin currentDraw={currentDraw} src={this.props[currentDraw]}/>
       </div>
     )
   }
