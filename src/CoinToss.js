@@ -4,7 +4,7 @@ import Coin from './Coin';
 class CoinToss extends React.Component{
   static defaultProps = {
     heads:'https://tinyurl.com/react-coin-heads-jpg',
-    tails:'https://tinyurl.com/react-coin-tails-jpg',
+    tails:'http://www.pcgscoinfacts.com/UserImages/71009269r.jpg',
   }
 
   state ={
