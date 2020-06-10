@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <CoinToss/>
-      <ColorGrid/>
+      <ColorGrid nColor={18}/>
     </div>
   );
 }
