@@ -1,0 +1,7 @@
+.ColorGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}

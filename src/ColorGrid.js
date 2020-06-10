@@ -1,5 +1,7 @@
 import React from 'react';
 import ColorBox from './ColorBox';
+import './ColorGrid.css';
+
 class ColorGrid extends React.Component{
   static defaultProps = {
     nColor:16,
