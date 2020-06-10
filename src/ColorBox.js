@@ -12,8 +12,8 @@ class ColorBox extends React.Component{
     const {color} = this.state;
     const divStyle = {
       backgroundColor: `#${color}`,
-      width: 250,
-      height: 100,
+      width: 300,
+      height: 300,
     };
     return(
       <div className='ColorBox' style={divStyle} onClick={this.genColor}>
