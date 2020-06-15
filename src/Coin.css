@@ -1,3 +1,19 @@
-.Coin img {
-  width: 300px;
+.Coin {
+  padding: 1.5em;
+  border: #3e7dce 3px solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  background-color: #528cd9;
+}
+
+i {
+  font-size: 100px;
+  color: #270495;
 }
