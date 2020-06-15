@@ -5,7 +5,7 @@ const Coin = (props) => {
   const {currentDraw,src} = props;
   return (
     <div className='Coin'>
-      <img alt={currentDraw} src={src}/>
+      <i alt={currentDraw} className={src}></i>
     </div>
   )
 }
