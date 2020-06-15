@@ -14,10 +14,15 @@ class ColorBox extends React.Component{
       backgroundColor: color,
       width: 300,
       height: 300,
+      lineHeight: 9,
     };
+    const pStyle = {
+      fontWeight: 'bold',
+      fontSize: 30,
+    }
     return(
       <div className='ColorBox' style={divStyle} onClick={this.genColor}>
-        {color}
+        <p style={pStyle}>{color}</p>
       </div>
     )
   }
