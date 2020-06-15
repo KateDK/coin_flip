@@ -17,7 +17,7 @@ class ColorBox extends React.Component{
     };
     return(
       <div className='ColorBox' style={divStyle} onClick={this.genColor}>
-        ColorBox
+        {color}
       </div>
     )
   }
