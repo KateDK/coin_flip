@@ -3,8 +3,8 @@ import Coin from './Coin';
 
 class CoinToss extends React.Component{
   static defaultProps = {
-    heads:'https://tinyurl.com/react-coin-heads-jpg',
-    tails:'http://www.pcgscoinfacts.com/UserImages/71009269r.jpg',
+    heads:'fas fa-user-astronaut',
+    tails:'fas fa-satellite',
   }
 
   state ={
