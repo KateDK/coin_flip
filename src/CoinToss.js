@@ -25,7 +25,7 @@ class CoinToss extends React.Component{
         <h1>Coin Tossing action here!</h1>
         <Coin currentDraw={currentDraw} src={this.props[currentDraw]}/>
         <button onClick={this.flip}>Flip</button>
-    <p> out of {headsDrawn+tailsDrawn} flips, there have been {headsDrawn} heads and {tailsDrawn} tails</p>
+        <p> out of {headsDrawn+tailsDrawn} flips, there have been {headsDrawn} heads and {tailsDrawn} tails</p>
       </div>
     )
   }
