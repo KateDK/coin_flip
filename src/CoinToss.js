@@ -11,7 +11,7 @@ class CoinToss extends React.Component{
   state ={
     headsDrawn: 0,
     tailsDrawn: 0,
-    currentDraw: {face: 'heads', icon:'fas fa-user-astronaut'},
+    currentDraw: null,
   }
 
   flip = () =>{
