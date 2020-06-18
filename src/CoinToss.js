@@ -4,8 +4,8 @@ import {randomChoice} from './helpers';
 
 class CoinToss extends React.Component{
   static defaultProps = {
-    heads:'fas fa-user-astronaut',
-    tails:'fas fa-satellite',
+   faces:[ {face: 'heads', icon:'fas fa-user-astronaut'},
+    {face: 'tails',icon:'fas fa-satellite'}]
   }
 
   state ={
