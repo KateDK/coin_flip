@@ -3,4 +3,6 @@ const randomChoice = (arr) =>{
   return arr[randomChoice];
 }
 
-export {randomChoice};
+const randomHexColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`
+
+export {randomChoice,randomHexColor};
