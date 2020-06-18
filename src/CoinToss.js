@@ -15,8 +15,17 @@ class CoinToss extends React.Component{
   }
 
   flip = () =>{
-    const random = Math.ceil(Math.random()*2);
-    random > 1 ? this.setState(prevState => ({tailsDrawn: prevState.tailsDrawn+1, currentDraw: 'tails'})) : this.setState(prevState => ({headsDrawn: prevState.headsDrawn+1, currentDraw:'heads'}));
+    const currentChoice = randomChoice(this.props.faces);
+    const newState = {
+      ...this.state,
+      currentDraw:currentChoice,
+    }
+   if(currentChoice.face === 'heads'){
+     newState.headsDrawn+=1;
+   }else{
+     newState.tailsDrawn+=1;
+   }
+   this.setState(newState);
   }
 
   render(){
