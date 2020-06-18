@@ -1,5 +1,6 @@
 import React from 'react';
 import Coin from './Coin';
+import {randomChoice} from './helpers';
 
 class CoinToss extends React.Component{
   static defaultProps = {
