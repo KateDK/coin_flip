@@ -1,5 +1,6 @@
 import React from 'react';
 import {randomHexColor} from './helpers';
+import './ColorBox.css';
 
 class ColorBox extends React.Component{
 
