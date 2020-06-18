@@ -1,4 +1,5 @@
 import React from 'react';
+import {randomHexColor} from './helpers';
 
 class ColorBox extends React.Component{
 
@@ -6,7 +7,13 @@ class ColorBox extends React.Component{
     color: `#${Math.floor(Math.random()*16777215).toString(16)}`,
   }
 
-  genColor = () => this.setState({color:`#${Math.floor(Math.random()*16777215).toString(16)}`});
+  genColor = () => {
+    let color = this.state.color;
+    let newColor = randomHexColor();
+    while(newColor === color){
+      newColor=randomHexColor();
+    }
+    this.setState({color:newColor})};
 
   render(){
     const {color} = this.state;
