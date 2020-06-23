@@ -4,5 +4,6 @@ const randomChoice = (arr) =>{
 }
 
 const randomHexColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`
+// Randomizing hex colors taken from here: https://css-tricks.com/snippets/javascript/random-hex-color/
 
 export {randomChoice,randomHexColor};
