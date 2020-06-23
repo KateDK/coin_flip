@@ -1,18 +1,18 @@
 import React from 'react';
-import {randomHexColor} from './helpers';
+import {makeRandomHSLColor} from './helpers';
 import './ColorBox.css';
 
 class ColorBox extends React.Component{
 
   state={
-    color: randomHexColor(),
+    color: makeRandomHSLColor(),
   }
 
   genColor = () => {
     let color = this.state.color;
-    let newColor = randomHexColor();
+    let newColor = makeRandomHSLColor();
     while(newColor === color){
-      newColor=randomHexColor();
+      newColor=makeRandomHSLColor();
     }
     this.setState({color:newColor})};
 
