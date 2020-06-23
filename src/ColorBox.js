@@ -20,9 +20,10 @@ class ColorBox extends React.Component{
     const {color} = this.state;
     const divStyle = {
       backgroundColor: color,
-      width: 300,
-      height: 300,
-      lineHeight: 9,
+      width: 400,
+      height: 400,
+      lineHeight: 20,
+      padding:5,
     };
     const pStyle = {
       fontWeight: 'bold',
