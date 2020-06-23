@@ -3,7 +3,10 @@ const randomChoice = (arr) =>{
   return arr[randomChoice];
 }
 
-const randomHexColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`
-// Randomizing hex colors taken from here: https://css-tricks.com/snippets/javascript/random-hex-color/
+const makeRandomHSLColor = () => {
 
-export {randomChoice,randomHexColor};
+  return `hsl(${Math.floor(Math.random() * (284 - 262)) + 262},80%,55%)`;
+}
+
+
+export {randomChoice,makeRandomHSLColor};
