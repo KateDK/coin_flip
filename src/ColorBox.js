@@ -30,7 +30,7 @@ class ColorBox extends React.Component{
       fontSize: 15,
     }
     return(
-      <div className='ColorBox' style={divStyle} onClick={this.genColor}>
+      <div className='ColorBox' style={divStyle} onMouseOver={this.genColor}>
         <p style={pStyle}>{color}</p>
       </div>
     )
