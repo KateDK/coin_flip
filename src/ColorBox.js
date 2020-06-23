@@ -27,7 +27,7 @@ class ColorBox extends React.Component{
     };
     const pStyle = {
       fontWeight: 'bold',
-      fontSize: 30,
+      fontSize: 15,
     }
     return(
       <div className='ColorBox' style={divStyle} onClick={this.genColor}>
